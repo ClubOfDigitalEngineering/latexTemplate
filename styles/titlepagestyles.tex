@@ -1,4 +1,6 @@
 \usepackage{graphicx}
+\usepackage{paracol, setspace}
+
 
 \newcommand{\munichStyle}[9]{
 	\thispagestyle{empty}
@@ -67,5 +69,55 @@
 		\large Tag der m\"undlichen Pr\"ufung: #9\\
 	\end{flushleft}
 	
+	\cleardoublepage
+}
+
+\newcommand{\iRMBStyle}[6]{
+	\thispagestyle{empty}
+	\vspace*{\stretch{1}}
+	
+	\begin{paracol}{2}
+		\advance\columnwidth 6.5em \hsize\columnwidth
+		\begin{flushleft}
+			\small
+			Institut f\"ur rechnergest\"utzte Modellierung im Bauingenieurwesen\\
+			Technische Universit\"at Carolo Wilhelmina zu Braunschweig\\
+			Prof. Dr.-Ing. habil. Manfred Krafczyk\\				
+		\end{flushleft}
+		\switchcolumn
+		\advance\columnwidth 0em \hsize\columnwidth
+		\begin{spacing}{1}
+			\begin{flushright}
+				\includegraphics[width=1.6in]{img/iRMB-Logo}
+			\end{flushright}
+		\end{spacing}		
+	\end{paracol}
+
+	
+	{\parindent0cm
+		\rule{\linewidth}{.7ex}}
+	\begin{flushright}
+		\vspace*{\stretch{1}}
+		\bfseries\Huge
+		#1\\
+		\vspace*{\stretch{1}}
+		\bfseries\large
+		#2\\
+		\vspace*{\stretch{1}}
+		\bfseries\large
+		#3
+	\end{flushright}
+	\rule{\linewidth}{.7ex}
+	\vspace*{\stretch{5}}
+	\begin{center}
+		\includegraphics[width=2in]{img/tu-logo}
+	\end{center}
+	\vspace*{\stretch{1}}
+	\begin{center}
+	\LARGE{Erstpr\"ufer: #4} \\
+	\LARGE{Zweitpr\"ufer: #5} \\
+	\LARGE{Betreuer: #6}
+	\end{center}
+
 	\cleardoublepage
 }

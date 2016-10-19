@@ -1,2 +1,7 @@
-\usepackage[Sonny]{fncychap}
+%\usepackage[Sonny]{fncychap}
 \renewcommand\sf{\sffamily} %sf is deprecated
+
+
+\renewcommand*\chapterformat{%
+	\chapappifchapterprefix{\ }\thechapter\newline}
+\renewcommand*\chapterheadmidvskip{\vspace{-0.1cm}}

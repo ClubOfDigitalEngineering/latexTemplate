@@ -1,11 +1,17 @@
 \tableofcontents
 \markboth{Inhaltsverzeichnis}{Inhaltsverzeichnis}
 
-\listoffigures
+\clearpage
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 \markboth{Abbildungsverzeichnis}{Abbildungsverzeichnis}
+\listoffigures
 
+\clearpage
 \addCodeListingsAsChapter
 \lstlistoflistings
 
 \addAcronymsAsChapter
 \input{source/verzeichnisse/acronyms}
+
+\addListOfEquationsAsChapter{Formelverzeichnis}
+\listofformels

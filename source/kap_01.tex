@@ -1,9 +1,22 @@
 
 \chapter{Das erste Kapitel}
-\blindtext \\
+\blindtext 
 
-So wird eine Akürzung benutzt \ac{ABC}\\
+\clearpage
+\section{Section mit Bild}
 
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/kap1/gitSimu}
+	\caption{Cooles Bild in Farbe}
+	\label{fig:bild}
+\end{figure} 
+
+
+\section{Section mit Abkürzung}
+So wird eine Akürzung benutzt \ac{ABC}
+
+\section{Section mit Listing}
 \begin{lstlisting}[caption = SomeClass., label=cs:someClass]
 class SomeClass : public SomeClass{
 	private:
@@ -16,9 +29,9 @@ class SomeClass : public SomeClass{
 }
 \end{lstlisting}
 
-\clearpage
-\blindtext
-\section{adkjfadkljfh}
-\blindtext
-\clearpage
-\blindtext
+\section{Section mit Formel}
+\begin{equation}
+T^{s} = s + pN.
+\formelentry{Problemlösezeit seriell bei schwacher Skalierung}
+\label{eq:seriellSchwachSkal}
+\end{equation}

@@ -1,0 +1,17 @@
+\DeclareNewTOC[%
+type=formel,
+name={Formel},%
+hang=1.5em,%
+listname={Formelverzeichnis}
+]{for}
+
+
+\newcommand*{\formelentry}[1]{
+	\addcontentsline{for}{formel}{\protect\numberline{\theequation} #1}
+}
+
+\newcommand{\addListOfEquationsAsChapter}[1]{
+	\clearpage
+	\addcontentsline{toc}{chapter}{#1}
+	\markboth{#1}{#1}
+}

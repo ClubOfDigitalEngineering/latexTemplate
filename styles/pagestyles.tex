@@ -1,0 +1,15 @@
+\usepackage{fancyhdr} 
+
+\newcommand{\fancyPageStyle}{	
+	\fancyhf{}
+	\addtolength{\headheight}{15pt}
+	
+	\fancyhead[LO]{\slshape\nouppercase{\leftmark}}
+	\fancyhead[RE]{\slshape\nouppercase{\rightmark}}
+	\fancyfoot[LE,RO]{\thepage}
+	
+	\pagestyle{fancy}
+}
+
+
+

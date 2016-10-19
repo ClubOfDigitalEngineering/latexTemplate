@@ -1,0 +1,21 @@
+\input{configuration}
+\usepackage{blindtext}
+\begin{document}
+	\sfTextStyle
+	\frontmatter
+		\input{source/titlepage}
+		
+			\fancyPageStyle
+		\input{source/verzeichnisse}
+		\input{source/abstract}
+	
+	\mainmatter\setcounter{page}{1}
+		\input{source/kap_01}
+		\input{source/kap_02}
+		\input{source/anhang}
+	
+	\backmatter
+		\input{source/bibliographie}
+		
+		\input{source/danksagung}
+\end{document}

@@ -1,15 +1,18 @@
-\usepackage{fancyhdr} 
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\usepackage[bottom=2.75cm, footskip = 1.0cm]{geometry}
+\automark{chapter}
+\automark*{section}
 
-\newcommand{\fancyPageStyle}{	
-	\fancyhf{}
-	\addtolength{\headheight}{15pt}
+\newcommand{\HeaderAndFooter}{
 	
-	\fancyhead[LO]{\slshape\nouppercase{\leftmark}}
-	\fancyhead[RE]{\slshape\nouppercase{\rightmark}}
-	\fancyfoot[LE,RO]{\thepage}
+	\clearpairofpagestyles
+	\setlength{\headheight}{20pt}
+	%	\setlength{\footheight}{55pt}
+	\lehead[]{\headmark}
+	\lohead[]{\headmark}
 	
-	\pagestyle{fancy}
+	\rofoot{\pagemark}
+	\pagestyle{scrheadings} 
 }
-
 
 

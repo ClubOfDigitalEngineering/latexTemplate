@@ -1,17 +1,27 @@
-\tableofcontents
-\markboth{Inhaltsverzeichnis}{Inhaltsverzeichnis}
+\pagestyle{plain}
 
-\clearpage
+\cleardoublepage
+\pdfbookmark{\contentsname}{Inhaltsverzeichnis}
+\tableofcontents
+
+
+\cleardoublepage
+\phantomsection
 \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
-\markboth{Abbildungsverzeichnis}{Abbildungsverzeichnis}
 \listoffigures
 
-\clearpage
-\addCodeListingsAsChapter
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Listingsverzeichnis} 
 \lstlistoflistings
 
-\addAcronymsAsChapter
+\cleardoublepage
+\phantomsection
+\chapter*{Abk\"urzungsverzeichnis}
+\addcontentsline{toc}{chapter}{Abk\"urzungsverzeichnis} 
 \input{source/verzeichnisse/acronyms}
 
-\addListOfEquationsAsChapter{Formelverzeichnis}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Formelverzeichnis}
 \listofformels

@@ -1,15 +1,16 @@
 \input{configuration}
 
 \begin{document}
-	\sfTextStyle
+	\romanTextStyle
 	\frontmatter
 		\input{source/titlepage}
+		%\includepdf[pages=-]{Aufgabenstellung.pdf}
+		\input{source/danksagung}
 		\input{source/abstract}
-			\fancyPageStyle
 		\input{source/verzeichnisse}
 		
-	
-	\mainmatter\setcounter{page}{1}
+	\mainmatter
+	\HeaderAndFooter
 		\input{source/kap_01}
 		\input{source/kap_02}
 		\input{source/anhang}
@@ -17,6 +18,6 @@
 	\backmatter
 		\input{source/bibliography}
 		
-		\input{source/danksagung}
+		
 		\input{source/declarationAuthorship}
 \end{document}

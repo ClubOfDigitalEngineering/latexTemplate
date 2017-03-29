@@ -18,22 +18,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{blindtext}
+\usepackage{pdfpages} %includepdf command
+\usepackage{graphicx}
+\graphicspath{{./img/kap1/}{./img/kap2/}}
+
+%%%%load hyperref at least package%%%%
+\providecommand\phantomsection{}
 \usepackage[
-pdftex=true,%
+pdftex,
 pdfpagemode={UseOutlines},
 pdfview={Fit},
 pdfstartview={Fit},
-pdftitle    = {Titel},
+pdftitle    = {},
 pdfsubject  = {},
-pdfauthor   = {Soeren Peters},
+pdfauthor   = {},
 pdfkeywords = {},
-colorlinks=true,%
-linkcolor=black,%
-menucolor=black,%
-urlcolor=black,%
-citecolor=black,%
-linktocpage,%
-bookmarksnumbered=true,%
-bookmarksopen=true,%
-plainpages=false
+colorlinks=true,
+linkcolor=black,
+menucolor=black,
+urlcolor=black,
+citecolor=black,
+linktocpage,
+bookmarksnumbered=true,
+bookmarksopen=true,
 ]{hyperref}
+\usepackage{bookmark}
